@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
@@ -151,10 +152,11 @@ fun HomeScreen() {
                         .height(48.dp)
                         .width(276.dp),
                     shape = RoundedCornerShape(20.dp),
-                    colors =
+                    colors = ButtonDefaults.buttonColors(Color(0xFFFFC23D))
                 ){
                         Text(
-                            text = stringResource(R.string.Get_Started)
+                            text = stringResource(R.string.Get_Started),
+                            color = Color(0xFF3347B0)
                         )
                 }
             }
